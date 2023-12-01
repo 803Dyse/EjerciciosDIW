@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .rotate-container {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      transition: transform 1s ease-in-out, width 1s ease-in-out, background-color 1s ease-in-out;
+    }
+
+    .move-container {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(128, 128, 128, 0.4);
+      transition: transform 1s ease-in-out, background-color 1s ease-in-out;
+    }
+
+    /* Al pasar el ratón, aplicamos los estilos */
+    .rotate-container:hover {
+      transform: rotate(360deg) scale(2);
+      width: 200px;
+      background-color: red;
+    }
+
+    .move-container:hover {
+      transform: translateX(50px) rotate(15deg) scaleY(1.5);
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="rotate-container"></div>
+  <div class="move-container"></div>
+</body>
+</html>

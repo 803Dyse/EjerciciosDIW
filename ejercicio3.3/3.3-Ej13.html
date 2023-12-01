@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            position: relative;
+            height: 200px;
+            border: 2px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .estatico,
+        .relativo,
+        .fijo,
+        .absoluto,
+        .sticky {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+
+        .relativo {
+            position: relative;
+        }
+
+        .fijo {
+            position: fixed;
+        }
+
+        .absoluto {
+            position: absolute;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="estatico">1. Estático</div>
+        <div class="relativo">2. Relativo</div>
+        <div class="fijo">3. Fijo</div>
+        <div class="absoluto">4. Absoluto</div>
+        <div class="sticky">5. Sticky</div>
+    </div>
+
+    <p>Observa cómo se comportan los elementos con diferentes posiciones. ¡Juega con los estilos y observa las
+        diferencias!</p>
+</body>
+
+</html>
