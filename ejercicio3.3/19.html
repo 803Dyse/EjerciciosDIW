@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Botones Personalizados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-normal {
+            background-color: #3498db;
+            color: #fff;
+            cursor: crosshair;
+        }
+
+        .btn-outline {
+            border: 2px solid #3498db;
+            background: transparent;
+            color: #3498db;
+            cursor: pointer;
+        }
+
+        .btn-alert {
+            background-color: #e74c3c;
+            color: #fff;
+            cursor: help;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn-normal">Botón Normal</button>
+    <button class="btn-outline">Botón Outline</button>
+    <button class="btn-alert">Botón Alerta</button>
+</body>
+
+</html>

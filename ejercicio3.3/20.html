@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Usando Propiedades Personalizadas</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: white;
+            --rounded-border: 10px;
+        }
+
+        .custom-box {
+            background-color: var(--primary-color);
+            border-radius: var(--rounded-border);
+            padding: 20px;
+        }
+
+        .custom-text {
+            color: var(--secondary-color);
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usando Propiedades Personalizadas</h1>
+    <div class="custom-box">
+        <p class="custom-text">Este es un párrafo con estilos personalizados.</p>
+    </div>
+</body>
+
+</html>
