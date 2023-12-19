@@ -1,0 +1,27 @@
+header,
+aside,
+main,
+.widgets,
+footer {
+  padding: 15px;
+}
+
+header {
+  color: white;
+  background-color: #9aca40;
+}
+body {
+  background-color: #f0f3f5;
+}
+aside {
+  color: #0d48a1;
+  background-color: #0d48a11f;
+}
+.widgets {
+  color: white;
+  background-color: #2196f3;
+}
+footer {
+  color: white;
+  background-color: #1e1e1e;
+}
